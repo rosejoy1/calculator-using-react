@@ -1,0 +1,90 @@
+ body {
+    display: grid;
+    place-content: center;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    font-size: 1.5rem;
+  }
+  
+.container {
+    height: 70vh;
+    width: 39vh;
+    background-color: rgb(3, 20, 45);
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  .wrapper {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+  }
+  .screen {
+    grid-column: 1 / -1;
+   
+  }  
+  .inputbox{
+    width: 96%;
+    height: 70px;
+    background-color: rgb(3, 20, 45);
+    border: 1px solid rgb(3, 20, 45);
+    color: white;
+    text-align: right;
+    padding: 0.1rem;
+    font-size: 3rem;
+
+  }
+  
+.btn {
+    display: grid;
+    place-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btn:hover {
+    background-color: gray;
+  }
+  
+  .light-gray {
+    background-color: gray;
+    color: black;
+  }
+  
+  .light-gray:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .orange {
+    background-color:orange;
+  }
+  
+  .orange:hover {
+    background-color: white;
+    color: orange;
+  }
+  
+  .zero {
+    grid-column: 1 / span 2;
+    border-radius: 25px;
+    place-content: unset;
+    align-items: center;
+    background-color: orange;
+    color:white;
+    
+  } 
+  .zero:hover{
+    background-color: white;
+    color:orange;
+  }
